@@ -19,7 +19,7 @@ import android.util.Log;
  * Expected sources: 1
  * Expected sinks: 2
  *
- * @number_of_leaks 1
+ * @number_of_leaks 2
  *
  */
 
@@ -34,7 +34,10 @@ public class MainActivity extends Activity {
         TelephonyManager telephonyManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
         String imei = telephonyManager.getDeviceId(); // source
 
-        Log.d(TAG, imei); // sink and leak
-        Log.v(TAG, "DUMMY"); // sink, but no leak
+        Intent i = new Intent();
+        i.putExtra("imei", imei);
+
+        startActivity(i); // sink, leak
+        this.setResult(RESULT_OK, i); // sink, leak
     }
 }

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="lina.ubc.wrongicclink">
+    package="junbin.ubc">
 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,39 +16,18 @@
                 <action android:name="android.intent.action.SEND"/>
             </intent-filter>
         </activity>
-        <service
-            android:name=".MainService"
-            android:enabled="true"
-            android:exported="false"
-            android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="lina.ubc.wrongicclink.MainService" />
-            </intent-filter>
-        </service>
-        <service
-        android:name=".NotificationListener"
-        android:label="@string/app_name"
-        android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+
+        <activity android:name=".Activity1">
         <intent-filter>
-            <action android:name="android.service.notification.NotificationListenerService" />
+            <action android:name="junbin.action"/>
         </intent-filter>
-    </service>
-        <service
-            android:name=".DummyOne"
-            android:label="@string/app_name"
-            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+    </activity>
+
+        <activity android:name=".Activity2">
             <intent-filter>
-                <action android:name="android.service.notification.NotificationListenerService" />
+                <action android:name="junbin.action"/>
             </intent-filter>
-        </service>
-        <service
-            android:name=".DummyTwo"
-            android:label="@string/app_name"
-            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
-            <intent-filter>
-                <action android:name="android.service.notification.NotificationListenerService" />
-            </intent-filter>
-        </service>
+        </activity>
     </application>
 
 </manifest>
