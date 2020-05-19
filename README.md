@@ -15,4 +15,4 @@ We ran all benchmarks with the three aforementioned tools, using the same tool c
 - UBC6: GetClass
 
 # Benchmarks for testing sensitivities and untangling purpose
-We created five benchmarks under folder [Sensitivity](/android-studio-project/Sensitivity) for testing what kinds of sensitivities are supported by a tool, and six benchmarks under folder [Untangling](/android-studio-project/Untangling) to untangling original benchmark apps.
+We created five benchmarks under folder [Sensitivity](/android-studio-project/Sensitivity) for testing what kinds of sensitivities are supported by a tool, and nine benchmarks under folder [Untangling](/android-studio-project/Untangling) to untangling original benchmark apps.
