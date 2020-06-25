@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CallbacksIntentHandling.iml" filepath="$PROJECT_DIR$/CallbacksIntentHandling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/CallbacksIntentHandling-app.iml" filepath="$PROJECT_DIR$/app/CallbacksIntentHandling-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-studio-project-CallbacksIntentHandling.iml" filepath="$PROJECT_DIR$/android-studio-project-CallbacksIntentHandling.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

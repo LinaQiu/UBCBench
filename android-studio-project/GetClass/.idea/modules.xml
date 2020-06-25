@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GetClass.iml" filepath="$PROJECT_DIR$/GetClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/GetClass-app.iml" filepath="$PROJECT_DIR$/app/GetClass-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-studio-project-GetClass.iml" filepath="$PROJECT_DIR$/android-studio-project-GetClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -41,6 +41,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         ((Button) v).setHint(imei);
-        Log.v("TAG", ((Button) v).getHint().toString()); // sink and leak
+        Button b = (Button) v;
+        Log.v("TAG", b.getHint().toString()); // sink and leak
     }
 }
