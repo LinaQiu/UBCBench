@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">UBC Benchmark</string>
+    <string name="method_name">leak</string>
+</resources>
