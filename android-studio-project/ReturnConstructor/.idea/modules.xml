@@ -5,8 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/ButterKnifeReflection.iml" filepath="$PROJECT_DIR$/ButterKnifeReflection.iml" />
       <module fileurl="file://$PROJECT_DIR$/GetConstructor.iml" filepath="$PROJECT_DIR$/GetConstructor.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/GetConstructor-app.iml" filepath="$PROJECT_DIR$/app/GetConstructor-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android-studio-project-GetConstructor.iml" filepath="$PROJECT_DIR$/android-studio-project-GetConstructor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/android-studio-project-GetConstructor-app.iml" filepath="$PROJECT_DIR$/app/android-studio-project-GetConstructor-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReturnConstructor.iml" filepath="$PROJECT_DIR$/ReturnConstructor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/ReturnConstructor-app.iml" filepath="$PROJECT_DIR$/app/ReturnConstructor-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -33,9 +33,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Class<?> myClass = null;
         try {
-            myClass = getClassLoader().loadClass("junbin.ubc.MyClass");
+            Class myClass = Class.forName("junbin.ubc.MyClass");
             Constructor<?> ctor = myClass.getConstructor(Context.class);
             ctor.newInstance(this); // The constructor of MyClass is invoked
         } catch (Exception e) {
