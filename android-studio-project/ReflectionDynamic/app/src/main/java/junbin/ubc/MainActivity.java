@@ -26,6 +26,8 @@ import java.lang.reflect.Method;
  */
 
 public class MainActivity extends Activity {
+    Class c;
+    Object o;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,16 +37,29 @@ public class MainActivity extends Activity {
         String imei = telephonyManager.getDeviceId(); // source
 
         try {
-            Class c = Class.forName("junbin.ubc.MainActivity");
-            Method m = c.getMethod("leak", String.class);
-            m.invoke(this, imei);
+            c = Class.forName("junbin.ubc.MainActivity");
+            o = c.newInstance();
+
+            Object[] obj = {"TAG", imei};
+            Class<?> params[] = new Class[obj.length];
+
+            if (obj[0] instanceof String) {
+                params[0] = String.class;
+            }
+
+            if (obj[1] instanceof String) {
+                params[1] = String.class;
+            }
+
+            Method m = c.getMethod("leak", params);
+            m.invoke(o, obj);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public void leak(String s) {
-        Log.i("TAG", s); // sink, leak
+    public void leak(String t, String s) {
+        Log.i(t, s); // sink, leak
     }
 
     public void leak() {
