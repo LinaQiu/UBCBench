@@ -9,19 +9,19 @@ import android.util.Log;
 import java.lang.reflect.Method;
 
 /**
- * @testcase_name ReflectionOverloaded
+ * @testcase_name ReflectionDynamic
  * @author Junbin ZHANG
  * @author_mail zjbthomas@ece.ubc.ca
  *
- * @description This is a test case with overloaded methods.
+ * @description This is a test case that dynamically constructs reflective calls.
  *
  * @dataflow
  * Expected sources: 1
- * Expected sinks: 1
+ * Expected sinks: 2
  *
  * @number_of_leaks 1
  *
- * @challenges The analysis must sucessfully handle getMethod(), when there are overloaded methods.
+ * @challenges The analysis must sucessfully handle refletive calls with parameters constrcuted dynamically.
  *
  */
 

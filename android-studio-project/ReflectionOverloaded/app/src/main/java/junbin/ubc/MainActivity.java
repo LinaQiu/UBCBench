@@ -17,7 +17,7 @@ import java.lang.reflect.Method;
  *
  * @dataflow
  * Expected sources: 1
- * Expected sinks: 1
+ * Expected sinks: 2
  *
  * @number_of_leaks 1
  *

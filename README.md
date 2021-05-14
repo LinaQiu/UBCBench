@@ -14,8 +14,10 @@ We ran all benchmarks with the three aforementioned tools, using the same tool c
 - U-DB4.17: SetContentView
 - U-DB4.18: CallbacksInFragment
 - U-DB7.24: ViewCasting
-- U-DB7.25: ContextSensitivityDepth
-- U-DB7.26: DuplicatedFlows
 - U-DB10.6: ReflectiveSource
 - U-DB10.7: GetClass
-- U-DB10.8: GetConstructor
+- U-DB10.8: ReflectionOverloaded
+- U-DB10.9: ReflectionRes
+- U-DB10.10: ReflectionDynamic
+- U-DB10.11: ReflectionAndroid
+- U-DB10.12: GetConstructor, ReturnConstructor
